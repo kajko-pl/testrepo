@@ -8,8 +8,41 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Test Gita</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <p>Test</p>
+        <div class="container main">
+            <div class="row">
+                <div class="col-xs-12">
+                    <form class="form-horizontal extra-spacing" role="form" data-toggle="validator" method="post">
+                        <div class="form-group required">
+                            <label for="c_name" class="col-sm-2 control-label">Imię</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="c_name" id="c_name" placeholder="Twoje imię" maxlength="32" required>
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label for="c_mail" class="col-sm-2 control-label">E-mail</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" name="c_mail" id="c_mail" placeholder="Twój adres e-mail" maxlength="64" required>
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label for="c_message" class="col-sm-2 control-label">Wiadomość</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" name="c_message" id="c_message" placeholder="Treść wiadomości" rows="5" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" name="c_send" class="btn btn-default">Wyślij wiadomość</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
